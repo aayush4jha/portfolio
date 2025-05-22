@@ -89,5 +89,3 @@ const Skills = () => {
 
 export default Skills;
 
-//import bindi from '../assets/bindi.png';
-//import aryan from '../assets/aryan.png';
