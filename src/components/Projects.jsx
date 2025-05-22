@@ -1,27 +1,33 @@
+import sparsh from '../assets/sparsh1.png';
+import bindi from '../assets/bindi1.png';
+import aryan from '../assets/dental.png';
+import space from '../assets/space.png';
+import amkart from '../assets/amkart.png';
+import watt from '../assets/watt.png';
 const projectData = [
   {
     id: 1,
     title: "WattWise",
     description: "A machine learning model designed to predict electricity demand using advanced algorithms, enhancing energy efficiency and planning.",
-    image: "https://via.placeholder.com/600x400",
+    image: watt,
     tech: ["Multiple Linear Regression", "Random Forest", "XGBoost"],
-    reportLink: "https://example.com/wattwise-report.pdf",
-    sourceLink: "https://github.com/aayush4jha/wattwise",
+    reportLink: "https://drive.google.com/file/d/1oakx8eNkumKCqM_i_C1K6OupgZd19-P3/view?usp=drive_link",
+    sourceLink: "https://github.com/aayush4jha/Electricity-Demand-Projection",
   },
   {
     id: 2,
     title: "Sparsh",
     description: "A dynamic website developed for SVNIT's annual cultural festival, offering seamless event management and user engagement.",
-    image: "https://via.placeholder.com/600x400",
+    image: sparsh,
     tech: ["React", "Node.js", "Express.js"],
-    liveLink: "https://example.com/sparsh",
+    liveLink: "https://www.sparsh-svnit.in/",
     sourceLink: "https://github.com/aayush4jha/sparsh",
   },
   {
     id: 3,
     title: "Bindi's Cupcakery",
     description: "A freelance e-commerce platform for a local bakery, built as part of Google Winter of Code, featuring a robust online ordering system.",
-    image: "https://via.placeholder.com/600x400",
+    image: bindi,
     tech: ["React", "Node.js", "Express.js", "MongoDB"],
     liveLink: "https://example.com/bindis-cupcakery",
     sourceLink: "https://github.com/aayush4jha/bindis-cupcakery",
@@ -30,28 +36,28 @@ const projectData = [
     id: 4,
     title: "Aryan Dental",
     description: "A professional freelance website for a dental clinic, providing an intuitive interface for appointment booking and patient services.",
-    image: "https://via.placeholder.com/600x400",
-    tech: ["React", "Node.js", "Express.js"],
-    liveLink: "https://example.com/aryan-dental",
+    image: aryan,
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    liveLink: "https://aryandental.vercel.app/",
     sourceLink: "https://github.com/aayush4jha/aryan-dental",
   },
   {
     id: 5,
     title: "Space-Industry",
     description: "A sleek website created for Web Wonders, organized by Nexus at SVNIT, showcasing innovative web design techniques.",
-    image: "https://via.placeholder.com/600x400",
+    image: space,
     tech: ["HTML", "CSS"],
-    liveLink: "https://example.com/space-industry",
-    sourceLink: "https://github.com/aayush4jha/space-industry",
+    liveLink: "https://space-industry-pi.vercel.app/",
+    sourceLink: "https://github.com/aayush4jha/Space-Industry",
   },
   {
     id: 6,
-    title: "AMKART",
+    title: "Amkart",
     description: "An educational project built to master web development fundamentals, featuring a simple yet functional e-commerce interface.",
-    image: "https://via.placeholder.com/600x400",
+    image: amkart,
     tech: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://example.com/amkart",
-    sourceLink: "https://github.com/aayush4jha/amkart",
+    liveLink: "https://amkart.vercel.app/",
+    sourceLink: "https://github.com/aayush4jha/AMKART",
   },
 ];
 
@@ -71,9 +77,9 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full sm:w-1/3 h-48 sm:h-auto object-cover"
+                className="w-full sm:w-1/3 object-cover aspect-square"
               />
-              <div className="p-4 sm:p-6 flex-1">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-center">
                 <h3 className="text-xl sm:text-2xl font-light tracking-tight mb-3 text-white">
                   {project.title}
                 </h3>
