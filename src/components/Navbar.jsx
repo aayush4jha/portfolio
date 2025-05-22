@@ -1,23 +1,23 @@
 import logo from "../assets/logo.png";
-import leetcode from "../assets/lc.png"; // Updated to lc.png
-import codeforces from "../assets/cf.png"; // Updated to cf.png
+import leetcode from "../assets/lc1.png";
+import codeforces from "../assets/cf.svg";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="mb-20 flex items-center justify-between py-6 max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-shrink-0 items-center">
         <img src={logo} alt="logo" className="h-10 w-auto" />
       </div>
       <div className="flex items-center space-x-4">
         <a href="mailto:aayush4jha@gmail.com">
-          <FaEnvelope className="text-white text-2xl hover:text-gray-300" />
+          <FaEnvelope className="text-red-500 text-2xl hover:text-red-400" /> {/* Gmail red */}
         </a>
         <a href="https://www.linkedin.com/in/aayush4jha/">
-          <FaLinkedin className="text-white text-2xl hover:text-gray-300" />
+          <FaLinkedin className="text-blue-700 text-2xl hover:text-blue-600" /> {/* LinkedIn blue */}
         </a>
         <a href="https://github.com/aayush4jha">
-          <FaGithub className="text-white text-2xl hover:text-gray-300" />
+          <FaGithub className="text-white text-2xl hover:text-gray-200" /> {/* White GitHub logo */}
         </a>
         <a href="https://leetcode.com/aayush4jha">
           <img src={leetcode} alt="LeetCode" className="h-6 w-6 hover:opacity-75" />
