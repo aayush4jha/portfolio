@@ -1,6 +1,5 @@
 import logo from "../assets/logo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -9,6 +8,9 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="h-10 w-auto" />
       </div>
       <div className="flex items-center space-x-4">
+        <a href="mailto:aayush4jha@gmail.com">
+          <FaEnvelope className="text-white text-2xl hover:text-gray-300" />
+        </a>
         <a href="https://www.linkedin.com/in/aayush4jha/">
           <FaLinkedin className="text-white text-2xl hover:text-gray-300" />
         </a>
