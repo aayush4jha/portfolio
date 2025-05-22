@@ -63,8 +63,10 @@ const Skills = () => {
   ];
 
   return (
-    <div className="border-b border-neutral-800 pb-24">
-      <h1 className="my-20 text-center text-4xl">Skills</h1>
+    <div>
+      <h1 className="my-20 text-center text-6xl font-thin tracking-tight text-white">
+        Skills
+      </h1>
       {skillCategories.map((category, index) => (
         <div key={index} className="mb-8">
           <h2 className="text-center text-2xl font-semibold mb-6">{category.title}</h2>
