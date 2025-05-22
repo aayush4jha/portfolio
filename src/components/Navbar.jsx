@@ -1,4 +1,6 @@
 import logo from "../assets/logo.png";
+import leetcode from "../assets/lc.png"; // Updated to lc.png
+import codeforces from "../assets/cf.png"; // Updated to cf.png
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
@@ -16,6 +18,12 @@ const Navbar = () => {
         </a>
         <a href="https://github.com/aayush4jha">
           <FaGithub className="text-white text-2xl hover:text-gray-300" />
+        </a>
+        <a href="https://leetcode.com/aayush4jha">
+          <img src={leetcode} alt="LeetCode" className="h-6 w-6 hover:opacity-75" />
+        </a>
+        <a href="https://codeforces.com/profile/aayush4jha">
+          <img src={codeforces} alt="Codeforces" className="h-6 w-6 hover:opacity-75" />
         </a>
       </div>
     </nav>
