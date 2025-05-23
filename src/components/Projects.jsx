@@ -4,10 +4,11 @@ import aryan from '../assets/dental.png';
 import space from '../assets/space.png';
 import amkart from '../assets/amkart.png';
 import watt from '../assets/watt.png';
+
 const projectData = [
   {
     id: 1,
-    title: "WattWise",
+    title: "Watt Wise",
     description: "A machine learning model designed to predict electricity demand using advanced algorithms, enhancing energy efficiency and planning.",
     image: watt,
     tech: ["Multiple Linear Regression", "Random Forest", "XGBoost"],
@@ -43,7 +44,7 @@ const projectData = [
   },
   {
     id: 5,
-    title: "Space-Industry",
+    title: "Space Industry",
     description: "A sleek website created for Web Wonders, organized by Nexus at SVNIT, showcasing innovative web design techniques.",
     image: space,
     tech: ["HTML", "CSS"],
@@ -74,11 +75,18 @@ const Projects = () => {
               key={project.id}
               className="rounded-lg shadow-lg overflow-hidden flex flex-col sm:flex-row border border-gray-700 transform transition duration-300 hover:shadow-xl hover:border-blue-500 hover:scale-[1.01] sm:hover:scale-[1.02]"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full sm:w-1/3 object-cover aspect-square"
-              />
+              <a
+                href={project.reportLink || project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-1/3"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover aspect-square"
+                />
+              </a>
               <div className="p-4 sm:p-6 flex-1 flex flex-col justify-center">
                 <h3 className="text-xl sm:text-2xl font-light tracking-tight mb-3 text-white">
                   {project.title}
@@ -130,7 +138,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section>  
   );
 };
 
