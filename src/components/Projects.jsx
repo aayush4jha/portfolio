@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import sparsh from '../assets/sparsh1.png';
 import bindi from '../assets/bindi1.png';
 import aryan from '../assets/dental.png';
@@ -65,29 +66,41 @@ const projectData = [
 const Projects = () => {
   return (
     <section className="py-8 sm:py-12 md:py-16 bg-transparent min-h-screen">
+      <br />
+      <br />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl font-thin tracking-tight text-center mb-8 sm:mb-10 md:mb-12 text-white">
           Projects
         </h2>
         <div className="space-y-6 sm:space-y-8">
-          {projectData.map((project) => (
+          {projectData.map((project, index) => (
             <div
               key={project.id}
-              className="rounded-lg shadow-lg overflow-hidden flex flex-col sm:flex-row border border-gray-700 transform transition duration-300 hover:shadow-xl hover:border-blue-500 hover:scale-[1.01] sm:hover:scale-[1.02]"
+              className="flex flex-col sm:flex-row"
             >
-              <a
+              <motion.a
                 href={project.reportLink || project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-1/3"
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 * index }}
+                viewport={{ once: true, amount: 0.3 }}
               >
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover aspect-square"
                 />
-              </a>
-              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-center">
+              </motion.a>
+              <motion.div
+                className="p-4 sm:p-6 flex-1 flex flex-col justify-center"
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 * index + 0.1 }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
                 <h3 className="text-xl sm:text-2xl font-light tracking-tight mb-3 text-white">
                   {project.title}
                 </h3>
@@ -133,12 +146,12 @@ const Projects = () => {
                     Source Code
                   </a>
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>
       </div>
-    </section>  
+    </section>
   );
 };
 
