@@ -1,5 +1,8 @@
 import mat from '../assets/mat.webp';
-import { 
+import motionImg from '../assets/motion.png';
+import vsImg from '../assets/vs.png';
+
+import {
   SiC, SiCplusplus, SiPython, SiJavascript, SiTypescript,
   SiHtml5, SiCss3, SiReact, SiNodedotjs, SiExpress, SiTailwindcss, SiNextdotjs, SiBootstrap,
   SiMongodb, SiMysql,
@@ -78,7 +81,8 @@ const Skills = () => {
         { name: "Express.js", icon: <SiExpress size={32} color="#FFFFFF" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss size={32} color="#06B6D4" /> },
         { name: "Next.js", icon: <SiNextdotjs size={32} color="#FFFFFF" /> },
-        { name: "Bootstrap", icon: <SiBootstrap size={32} color="#7952B3" /> }
+        { name: "Bootstrap", icon: <SiBootstrap size={32} color="#7952B3" /> },
+        { name: "Motion", icon: <img src={motionImg} alt="Framer Motion" width="32" height="32" /> }
       ]
     },
     {
@@ -106,7 +110,8 @@ const Skills = () => {
         { name: "GitHub", icon: <SiGithub size={32} color="#FFFFFF" /> },
         { name: "Vercel", icon: <SiVercel size={32} color="#FFFFFF" /> },
         { name: "Jupyter", icon: <SiJupyter size={32} color="#F37626" /> },
-        { name: "Anaconda", icon: <SiAnaconda size={32} color="#44A833" /> }
+        { name: "Anaconda", icon: <SiAnaconda size={32} color="#44A833" /> },
+        { name: "VS Code", icon: <img src={vsImg} alt="VS Code" width="32" height="32" /> }
       ]
     }
   ];
