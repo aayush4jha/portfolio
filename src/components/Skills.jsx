@@ -98,9 +98,9 @@ const Skills = () => {
         { name: "Pandas", icon: <SiPandas size={32} color="#4B0082" /> },
         { name: "NumPy", icon: <SiNumpy size={32} color="#4D77AA" /> },
         { name: "Matplotlib", icon: <img src={mat} alt="Matplotlib" width="32" height="32" /> },
-        { name: "Scikit-Learn", icon: <SiScikitlearn size={32} color="#F7931E" /> },
-        { name: "PyTorch", icon: <SiPytorch size={32} color="#EE4C2C" /> },
-        { name: "TensorFlow", icon: <SiTensorflow size={32} color="#FF6F00" /> }
+        // { name: "Scikit-Learn", icon: <SiScikitlearn size={32} color="#F7931E" /> },
+        // { name: "PyTorch", icon: <SiPytorch size={32} color="#EE4C2C" /> },
+        // { name: "TensorFlow", icon: <SiTensorflow size={32} color="#FF6F00" /> }
       ]
     },
     {
